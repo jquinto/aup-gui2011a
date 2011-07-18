@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>  
+<html>  
+<head>  
+      
+<title>Simple Calculator</title>
+      
+<script type="text/javascript">  
+    function multiply(){  
+    a=Number(document.calculator.number1.value);  
+    b=Number(document.calculator.number2.value);  
+    c=a*b;  
+    document.calculator.total.value=c;  
+    }  
+
+    function addition(){  
+    a=Number(document.calculator.number1.value);  
+    b=Number(document.calculator.number2.value);  
+    c=a+b;  
+    document.calculator.total.value=c;  
+    }  
+
+    function subtraction(){  
+    a=Number(document.calculator.number1.value);  
+    b=Number(document.calculator.number2.value);  
+    c=a-b;  
+    document.calculator.total.value=c;  
+    }  
+ 
+    function division(){  
+    a=Number(document.calculator.number1.value);  
+    b=Number(document.calculator.number2.value);  
+    c=a/b;  
+    document.calculator.total.value=c;  
+    }  
+    </script>  
+      
+    </head>  
+      
+<body>  
+<form name="calculator">  
+      
+#1<input type="text" name="number1"><br>        
+#2<input type="text" name="number2"><br>
+=<input type="text" name="total"><br>
+      
+      
+<input type="button" value="+" onclick="javascript:addition();">
+<input type="button" value="-" onclick="javascript:subtraction();"><br>
+<input type="button" value="*" onclick="javascript:multiply();">
+<input type="button" value="/" onclick="javascript:division();">
+
+      
+</form>  
+      
+</body>  
+</html>  
